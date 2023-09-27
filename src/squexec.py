@@ -56,10 +56,10 @@ def main():
     print("\t\tQuery Executer\n")
     print("#################################################################\n")
 
-    server = input("Enter Server Address:\t")
-    database = input("Enter Database Name:\t")
-    username = input("Enter Username:\t")
-    password = input("Enter Password:\t")
+    server = input("Enter Server Address:\t\t")
+    database = input("Enter Database Name:\t\t")
+    username = input("Enter Username:\t\t\t")
+    password = input("Enter Password:\t\t\t")
 
     # Query input
     query_lines = []
@@ -78,7 +78,7 @@ def main():
 
     print(f"Your query:\n{query}")
 
-    confirm = input("Do you want to proceed with the query? (y/n)")
+    confirm = input("Do you want to proceed with the query? (y/n):\t\t")
 
     if confirm.lower() == "y":
         result = execute_query(query, server, database, username, password)
