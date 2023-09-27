@@ -2,7 +2,6 @@ import pyodbc
 import openpyxl
 import datetime
 
-# Comment using Helix Text Editor
 
 def connect_to_server(server, database, username, password):
     try:
